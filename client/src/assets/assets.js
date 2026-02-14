@@ -1,5 +1,5 @@
-import logo from './logo.svg'
-import logo_dark from './logo_dark.svg'
+import logo from './logo.png'
+import logo1 from './logo1.png'
 import search_icon from './search_icon.svg'
 import cross_icon from './cross_icon.svg'
 import upload_area from './upload_area.svg'
@@ -46,6 +46,7 @@ import lesson_icon from './lesson_icon.svg'
 
 export const assets = {
     logo,
+    logo1,
     search_icon,
     sketch,
     microsoft_logo,
@@ -66,7 +67,6 @@ export const assets = {
     dropdown_icon,
     cross_icon,
     upload_area,
-    logo_dark,
     down_arrow_icon,
     time_left_clock_icon,
     time_clock_icon,
