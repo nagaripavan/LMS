@@ -3,7 +3,7 @@ import { assets } from '../../assets/assets'
 
 const CallToAction = () => {
   return (
-    <div className='pt-16 px-8 md:px-0'>
+    <div className='py-16 px-8 md:px-0'>
         <h1 className='text-4xl font-semibold '>Learn anything, anytime, anywhere</h1>
         <p className='text-gray-500 mt-3 sm:text-sm'>Incididunt sint fugiat pariatur cupidatat consectetur
         sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
