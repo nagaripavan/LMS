@@ -9,7 +9,7 @@ const CourseSection = () => {
     const {allCourses} = useContext(AppContext)
 
   return (
-    <div className='pt-15 md:px-30 px-5'>
+    <div className='pt-16 md:px-32 px-5'>
         <h2 className='text-3xl font-semibold text-gray-800'>Learn from the best</h2>
         <p className='pt-3 text-gray-500 text-sm'>Discover our top-rated courses across various categories. From coding and design to <br /> business and wellness, our courses are crafted to deliver results.</p>
         
