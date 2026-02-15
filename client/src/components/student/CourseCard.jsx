@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const CourseCard = ({course}) => {
 
-  const {currency} = useContext(AppContext);
+  const {currency,calculateRating} = useContext(AppContext);
 
   return (
     <Link to={`/course/${course._id}`} onClick={()=>scrollTo(0,0)}
@@ -16,9 +16,9 @@ const CourseCard = ({course}) => {
           <h3 className='text-base font-semibold'>{course.courseTitle}</h3>
           <p className='text-gray-500'>{course.educator.name}</p>
           <div className='flex items-center space-x-2'>
-            <p>4.5</p>
+            <p>{calculateRating(course)}</p>
             <div className='flex'>
-              {[...Array(5)].map((_,i)=>(<img className='w-3.5 h-3.5' src={assets.star} alt="" key={i} />)
+              {[...Array(5)].map((_,i)=>(<img className='w-3.5 h-3.5' src={i<Math.floor(calculateRating(course))? assets.star:assets.star_blank} alt="" key={i} />)
             )}
             </div>
             <p className='text-gray-500'>22</p>
