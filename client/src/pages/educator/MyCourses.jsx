@@ -13,7 +13,6 @@ const MyCourses = () => {
 
   const fetchEducatorCourses = async ()=>{
     setCourses(allCourses)
-    console.log(allCourses)
   }
 
   useEffect(()=>{
